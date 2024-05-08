@@ -1,36 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
-  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
 }
 
 body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.25;
-  font-size: 10rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 8px;
+  background-color: blanchedalmond; 
 }
 
-ul li a {
-  text-decoration: none;
-  color: rgb(52, 28, 250);
+.title {
+  font-size: 5rem;
+  text-align: center;
+  margin: 10px;
+  text-decoration: underline;
 }
 
-img {
-  height: auto;
-  width: 400px;
-  border: 5px solid black;
-}
-
-h2 {
-  font-size: 2rem;
-  color: white;
+.header {
   background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  font-size: 3rem;
 }
 
-ul li {
+.para {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+ol,
+ul {
+  margin: 0 50px;
+  padding: 5px;
+}
+
+li {
+  font-size: 2rem;
+}
+
+ol {
+  list-style: upper-roman;
+}
+
+ul {
   list-style: square;
-  font-size: 3rem;
 }
 
-ol li {
-  list-style-type: lower-roman;
-  font-size: 3rem;
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav .nav-link {
+  width: 300px;
+  height: 200px;
+  font-size: 4rem;
+  text-decoration: none;
+  background-color: blue;
+  color: gray;
+  border-radius: 5px;
+}
+
+.nav .nav-link:hover {
+  background-color: orange;
+  color: black;
 }
